@@ -5,7 +5,8 @@ import '../../assets/css/colors/scheme-01.css'
 import '../../assets/css/coloring.css'
 
 const Content = () =>{
-    <div>
+    return(
+        <div>
         <div class="no-bottom no-top" id="content">
             <div id="top"></div>
             
@@ -793,6 +794,7 @@ const Content = () =>{
 
         </div>
     </div>
+    )
 }
 
 export default Content

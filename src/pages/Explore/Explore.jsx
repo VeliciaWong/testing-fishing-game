@@ -10,7 +10,7 @@ class Explore extends Component {
     render(){
         return(
             <Fragment>
-                <div>
+                <div className='container'>
                     <Header/>
                     <Content/>
                     <Footer/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ConnectWallet from '../../components/Connections/connectionWallet.js';
+// import ConnectWallet from '../../components/Connections/connectionWallet.js';
 import '../../assets/css/style.css'
 import '../../assets/css/colors/scheme-01.css'
 import '../../assets/css/coloring.css'

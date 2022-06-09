@@ -1,6 +1,5 @@
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import Home from './pages/Home/Home'
 import Explore from './pages/Explore/Explore';
 import Itemdetails from './pages/Itemdetails/Itemdetails';
@@ -8,20 +7,19 @@ import Itemdetails from './pages/Itemdetails/Itemdetails';
 import {
   Routes,
   Route,
-  HashRouter,
-  //  BrowserRouter
+  BrowserRouter
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <Routes>
       <Route path="/" exact element={<Home/>}/>
       <Route parh="/explore" element={<Explore/>}/>
       <Route path="/item-details" element={<Itemdetails/>}/>
     </Routes>
-  </HashRouter>,
+  </BrowserRouter>,
 
   rootElement
 );

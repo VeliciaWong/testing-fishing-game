@@ -110,9 +110,9 @@ const Header = () =>{
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="explore.html">Explore<span></span></a>
-                                        <ul>
-                                            <li><a href="wide_explore.html"><strong>New</strong>Wide Explore</a></li>
+                                        <a href="/explore">Explore<span></span></a>
+                                        {/* <ul>
+                                            <li><a href="#/explore"><strong>New</strong>Wide Explore</a></li>
                                             <li><a href="explore.html">Explore</a></li>
                                             <li><a href="explore-2.html">Explore 2</a></li>
                                             <li><a href="explore-music-nft.html">New: Music</a></li>
@@ -121,7 +121,7 @@ const Header = () =>{
                                             <li><a href="live-auction.html">Live Auction</a></li>
                                             <li><a href="item-details.html">Item Details</a></li>
                                             <li><a href="help-center.html">Help Center</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
                                     <li>
                                         <a href="#">Pages<span></span></a>
