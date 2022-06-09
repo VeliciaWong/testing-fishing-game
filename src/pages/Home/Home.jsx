@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Fragment} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../../components/Header'
-import Content from '../../components/Home/Content'
+import ContentHome from '../../components/Home/ContentHome'
 import Footer from '../../components/Footer'
 import '../../assets/css/style.css'
 import '../../assets/css/colors/scheme-01.css'
@@ -15,7 +15,7 @@ class Home extends Component {
             <Fragment>
                 <div className='wrapper'>
                     <Header/>
-                    <Content/>
+                    <ContentHome/>
                     <Footer/>
                 </div>  
             </Fragment>

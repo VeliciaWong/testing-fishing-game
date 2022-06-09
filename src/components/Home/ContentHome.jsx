@@ -33,7 +33,7 @@ import author8 from '../../assets/images/author/author-8.jpg'
 
 
 
-const Content = () =>{
+const ContentHome = () =>{
     return(
             <div class="no-bottom no-top" id="content">
             <div id="top"></div>
@@ -740,4 +740,4 @@ const Content = () =>{
     )
 }
 
-export default Content;
+export default ContentHome;

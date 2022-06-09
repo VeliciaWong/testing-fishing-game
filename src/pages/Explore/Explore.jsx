@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Fragment} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Content from '../../components/Explore/Content'
+import ContentExplore from '../../components/Explore/ContentExplore'
 import Footer from '../../components/Footer'
 import HeaderTransparent from '../../components/Explore/HeaderTransparent';
 import '../../assets/css/style.css'
@@ -15,7 +15,7 @@ class Explore extends Component {
             <Fragment>
                 <div id='wrapper'>
                     <HeaderTransparent/>
-                    <Content/>
+                    <ContentExplore/>
                     <a href="#" id="back-to-top"></a>
                     <Footer/>
                 </div>  

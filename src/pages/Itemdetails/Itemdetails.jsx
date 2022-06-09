@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Fragment} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../../components/Header'
-import Content from '../../components/Itemdetails/Content'
+import ContentItem from '../../components/Itemdetails/ContentItem'
 import Footer from '../../components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/css/style.css'
@@ -16,7 +16,7 @@ class Itemdetails extends Component {
             <Fragment>
                 <div className='wrapper'>
                     <Header/>
-                    <Content/>
+                    <ContentItem/>
                     <Footer/>
                 </div>  
             </Fragment>

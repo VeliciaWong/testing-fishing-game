@@ -34,7 +34,7 @@ import anim8 from '../../assets/images/items/anim-8.webp'
 import static7 from '../../assets/images/items/static-7.jpg'
 import static8 from '../../assets/images/items/static-8.jpg'
 
-const Content = () =>{
+const ContentExplore = () =>{
     return(
         <div id='wrapper'>
            <div class="no-bottom no-top" id="content">
@@ -828,4 +828,4 @@ const Content = () =>{
     )
 }
 
-export default Content
+export default ContentExplore

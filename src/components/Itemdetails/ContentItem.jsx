@@ -4,7 +4,7 @@ import '../../assets/css/style.css'
 import '../../assets/css/colors/scheme-01.css'
 import '../../assets/css/coloring.css'
 
-const Content = () =>{
+const ContentItem = () =>{
     return(
         <div>
         <div class="no-bottom no-top" id="content">
@@ -376,4 +376,4 @@ const Content = () =>{
     )
 }
 
-export default Content;
+export default ContentItem;
