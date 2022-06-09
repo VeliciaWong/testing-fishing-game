@@ -670,37 +670,37 @@ const Content = () =>{
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".1s">
-                            <a href='explore.html' class="icon-box style-2 rounded">
+                            <a href='#/explore' class="icon-box style-2 rounded">
                                 <i class="fa fa-image"></i>
                                 <span>Art</span>
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
-                            <a href='explore.html' class="icon-box style-2 rounded">
+                            <a href='#/explore' class="icon-box style-2 rounded">
                                 <i class="fa fa-music"></i>
                                 <span>Music</span>
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".3s">
-                            <a href='explore.html' class="icon-box style-2 rounded">
+                            <a href='#/explore' class="icon-box style-2 rounded">
                                 <i class="fa fa-search"></i>
                                 <span>Domain Names</span>
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".4s">
-                            <a href='explore.html' class="icon-box style-2 rounded">
+                            <a href='#/explore' class="icon-box style-2 rounded">
                                 <i class="fa fa-globe"></i>
                                 <span>Virtual Worlds</span>
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".5s">
-                            <a href='explore.html' class="icon-box style-2 rounded">
+                            <a href='#/explore' class="icon-box style-2 rounded">
                                 <i class="fa fa-vcard"></i>
                                 <span>Trading Cards</span>
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".6s">
-                            <a href='explore.html' class="icon-box style-2 rounded">
+                            <a href='#/explore' class="icon-box style-2 rounded">
                                 <i class="fa fa-th"></i>
                                 <span>Collectibles</span>
                             </a>

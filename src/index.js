@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './pages/Home/Home'
-// import Explore from './pages/Explore/Explore';
-// import Itemdetails from './pages/Itemdetails/Itemdetails';
+import Explore from './pages/Explore/Explore';
+import Itemdetails from './pages/Itemdetails/Itemdetails';
 // import App from './App';
 import {
   Routes,
@@ -18,8 +18,8 @@ ReactDOM.render(
   <HashRouter>
     <Routes>
       <Route path="/" exact element={<Home/>}/>
-      {/* <Route parh="/explore" element={<Explore/>}/>
-      <Route path="/item-details" element={<Itemdetails/>}/> */}
+      <Route parh="/explore" element={<Explore/>}/>
+      <Route path="/item-details" element={<Itemdetails/>}/>
     </Routes>
   </HashRouter>,
 
