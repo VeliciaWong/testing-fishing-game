@@ -5,7 +5,7 @@ import '../assets/css/style.css'
 import '../assets/css/colors/scheme-01.css'
 import '../assets/css/coloring.css'
 import logo from '../assets/images/logo-light.png';
-import logo_1 from '../assets/images/logo-1.png'
+import logo_1 from '../assets/images/logo.png'
 
 const Header = () =>{
     return(
@@ -18,7 +18,7 @@ const Header = () =>{
                                 <div class="de-flex-col">
                                     
                                     <div id="logo">
-                                        <a href="index.html">
+                                        <a href="">
                                             <img alt="" class="logo" src={logo}/>
                                             <img alt="" class="logo-2" src={logo_1}/>
                                         </a>
@@ -33,8 +33,8 @@ const Header = () =>{
                                 
                                 <ul id="mainmenu">
                                     <li>
-                                        <a href="index.html">Home<span></span></a>
-                                        <ul class="mega">
+                                        <a href="">Home<span></span></a>
+                                        {/* <ul class="mega">
                                             <li>
                                                 <div class="container">
                                                     <div class="menu-content">
@@ -107,7 +107,7 @@ const Header = () =>{
                                                     </div>
                                                 </div>
                                             </li>                                        
-                                        </ul>
+                                        </ul> */}
                                     </li>
                                     <li>
                                         <a href="/explore">Explore<span></span></a>
@@ -125,7 +125,7 @@ const Header = () =>{
                                     </li>
                                     <li>
                                         <a href="#">Pages<span></span></a>
-                                        <ul>
+                                        {/* <ul>
                                             <li><a href="author.html">Author</a></li>
                                             <li><a href="profile.html">Profile</a></li>
                                             <li><a href="wallet.html">Wallet</a></li>
@@ -136,18 +136,18 @@ const Header = () =>{
                                             <li><a href="login-2.html">Login 2</a></li>
                                             <li><a href="register.html">Register</a></li>
                                             <li><a href="contact.html">Contact Us</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>                                    
                                     <li>
                                         <a href="#">Stats<span></span></a>
-                                        <ul>
+                                        {/* <ul>
                                             <li><a href="activity.html">Activity</a></li>
                                             <li><a href="rankings.html">Rankings</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
                                     <li>
                                         <a href="#">Elements<span></span></a>
-                                        <ul>
+                                        {/* <ul>
                                             <li><a href="icons-elegant.html">Elegant Icons</a></li>
                                             <li><a href="icons-etline.html">Etline Icons</a></li>
                                             <li><a href="icons-font-awesome.html">Font Awesome Icons</a></li>
@@ -160,7 +160,7 @@ const Header = () =>{
                                             <li><a href="progress-bar.html">Progress Bar</a></li>
                                             <li><a href="tabs.html">Tabs</a></li>
                                             <li><a href="tooltips.html">Tooltips</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
                                 </ul>
                                 <div class="menu_side_area">

@@ -1,15 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import ConnectWallet from '../../components/Connections/connectionWallet.js';
 import '../../assets/css/style.css'
 import '../../assets/css/colors/scheme-01.css'
 import '../../assets/css/coloring.css'
+import logo_light from '../../assets/images/logo-light.png';
+import logo from '../../assets/images/logo.png'
 
-const Header = () =>{
+const HeaderTransparent = () =>{
     return(
-        <div>
             <header class="transparent">
-            <div class="container-fluid">
+            <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="de-flex sm-pt10">
@@ -17,8 +17,8 @@ const Header = () =>{
                             <div class="de-flex-col">
                                 <div id="logo">
                                     <a href="index.html">
-                                        <img alt="" class="logo" src="images/logo-light.png" />
-                                        <img alt="" class="logo-2" src="images/logo.png" />
+                                        <img alt="" class="logo" src={logo_light} />
+                                        <img alt="" class="logo-2" src={logo} />
                                     </a>
                                 </div>
                             </div>
@@ -29,12 +29,12 @@ const Header = () =>{
                         <div class="de-flex-col header-col-mid">
                             <ul id="mainmenu">
                                     <li>
-                                        <a href="index.html">Home<span></span></a>
+                                        <a href="/">Home<span></span></a>
                                         <ul class="mega">
                                             <li>
                                                 <div class="container">
                                                     <div class="menu-content">
-                                                        <div class="row g-0">
+                                                        {/* <div class="row g-0">
                                                             <div class="col-xl-3 col-lg-3">
                                                                 <ul>
                                                                     <li class="menu-title">New Homepage</li>
@@ -99,15 +99,15 @@ const Header = () =>{
                                                                     <li><a href="04_retro-index-2.html">Homepage Retro 2</a></li>
                                                                 </ul>
                                                             </div>
-                                                        </div>
+                                                        </div> */}
                                                     </div>
                                                 </div>
                                             </li>                                        
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="explore.html">Explore<span></span></a>
-                                        <ul>
+                                        <a href="">Explore<span></span></a>
+                                        {/* <ul>
                                             <li><a href="wide_explore.html"><strong>New</strong>Wide Explore</a></li>
                                             <li><a href="explore.html">Explore</a></li>
                                             <li><a href="explore-2.html">Explore 2</a></li>
@@ -117,11 +117,11 @@ const Header = () =>{
                                             <li><a href="live-auction.html">Live Auction</a></li>
                                             <li><a href="item-details.html">Item Details</a></li>
                                             <li><a href="help-center.html">Help Center</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
                                     <li>
                                         <a href="#">Pages<span></span></a>
-                                        <ul>
+                                        {/* <ul>
                                             <li><a href="author.html">Author</a></li>
                                             <li><a href="profile.html">Profile</a></li>
                                             <li><a href="wallet.html">Wallet</a></li>
@@ -132,18 +132,18 @@ const Header = () =>{
                                             <li><a href="login-2.html">Login 2</a></li>
                                             <li><a href="register.html">Register</a></li>
                                             <li><a href="contact.html">Contact Us</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>                                    
                                     <li>
                                         <a href="#">Stats<span></span></a>
-                                        <ul>
+                                        {/* <ul>
                                             <li><a href="activity.html">Activity</a></li>
                                             <li><a href="rankings.html">Rankings</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
                                     <li>
                                         <a href="#">Elements<span></span></a>
-                                        <ul>
+                                        {/* <ul>
                                             <li><a href="icons-elegant.html">Elegant Icons</a></li>
                                             <li><a href="icons-etline.html">Etline Icons</a></li>
                                             <li><a href="icons-font-awesome.html">Font Awesome Icons</a></li>
@@ -156,7 +156,7 @@ const Header = () =>{
                                             <li><a href="progress-bar.html">Progress Bar</a></li>
                                             <li><a href="tabs.html">Tabs</a></li>
                                             <li><a href="tooltips.html">Tooltips</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
                                 </ul>
                             <div class="menu_side_area">
@@ -169,8 +169,7 @@ const Header = () =>{
             </div>
         </div>
         </header>
-        </div>
     )
 }
 
-export default Header;
+export default HeaderTransparent;

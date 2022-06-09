@@ -16,8 +16,8 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" exact element={<Home/>}/>
-      <Route parh="/explore" element={<Explore/>}/>
-      <Route path="/item-details" element={<Itemdetails/>}/>
+      <Route path="/explore" element={<Explore/>}/>
+      <Route path="/itemdetails" element={<Itemdetails/>}/>
     </Routes>
   </BrowserRouter>,
 

@@ -1,17 +1,47 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../../assets/css/plugins.css'
 import '../../assets/css/style.css'
 import '../../assets/css/colors/scheme-01.css'
 import '../../assets/css/coloring.css'
+import subheader from '../../assets/images/background/subheader.jpg'
+import author1 from '../../assets/images/author/author-1.jpg'
+import static1 from '../../assets/images/items/static-1.jpg'
+import author10 from '../../assets/images/author/author-10.jpg'
+import static2 from '../../assets/images/items/static-2.jpg'
+import author11 from '../../assets/images/author/author-11.jpg'
+import static3 from '../../assets/images/items/static-3.jpg'
+import author12 from '../../assets/images/author/author-12.jpg'
+import static4 from '../../assets/images/items/static-4.jpg'
+import author9 from '../../assets/images/author/author-9.jpg'
+import anim4 from '../../assets/images/items/anim-4.webp'
+import author2 from '../../assets/images/author/author-2.jpg'
+import anim2 from '../../assets/images/items/anim-2.webp'
+import author3 from '../../assets/images/author/author-3.jpg'
+import anim1 from '../../assets/images/items/anim-1.webp'
+import author4 from '../../assets/images/author/author-4.jpg'
+import anim5 from '../../assets/images/items/anim-5.webp'
+import author5 from '../../assets/images/author/author-5.jpg'
+import anim3 from '../../assets/images/items/anim-3.webp'
+import author7 from '../../assets/images/author/author-7.jpg'
+import static5 from '../../assets/images/items/static-5.jpg'
+import author6 from '../../assets/images/author/author-6.jpg'
+import anim6 from '../../assets/images/items/anim-6.webp'
+import author8 from '../../assets/images/author/author-8.jpg'
+import anim7 from '../../assets/images/items/anim-7.webp'
+import static6 from '../../assets/images/items/static-6.jpg'
+import anim8 from '../../assets/images/items/anim-8.webp'
+import static7 from '../../assets/images/items/static-7.jpg'
+import static8 from '../../assets/images/items/static-8.jpg'
 
 const Content = () =>{
     return(
-        <div>
-        <div class="no-bottom no-top" id="content">
+        <div id='wrapper'>
+           <div class="no-bottom no-top" id="content">
             <div id="top"></div>
-            
+
             <section id="subheader" class="jarallax text-light">
-                <img class="jarallax-img" src="images/background/subheader.jpg" alt="" />
+                <img class="jarallax-img" src={subheader} alt="" />
                     <div class="center-y relative text-center">
                         <div class="container">
                             <div class="row">
@@ -24,11 +54,10 @@ const Content = () =>{
                         </div>
                     </div>
             </section>
-            
 
 			<section aria-label="section">
                 <div class="container">
-                    <div class="row cols-5 wow fadeIn">
+                    <div class="row wow fadeIn">
                         <div class="col-lg-12">
 
                             <div class="items_filter">
@@ -74,12 +103,12 @@ const Content = () =>{
 
                             </div>
                         </div>                     
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
-                                <div class="de_countdown bg-color-secondary text-white" data-year="2022" data-month="6" data-day="16" data-hour="8"></div>
+                                <div class="de_countdown" data-year="2022" data-month="6" data-day="16" data-hour="8"></div>
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Monica Lucas">                                    
-                                        <img class="lazy" src="images/author/author-1.jpg" alt=""></img>
+                                        <img class="lazy" src={author1} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -97,7 +126,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/static-1.jpg" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={static1} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -119,11 +148,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>                 
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Stacy Long">                                    
-                                        <img class="lazy" src="images/author/author-10.jpg" alt=""></img>
+                                        <img class="lazy" src={author10} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -141,7 +170,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/static-2.jpg" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={static2} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -163,12 +192,12 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
-                                <div class="de_countdown bg-color-secondary text-white" data-year="2022" data-month="6" data-day="14" data-hour="8"></div>
+                                <div class="de_countdown" data-year="2022" data-month="6" data-day="14" data-hour="8"></div>
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Ida Chapman">                                    
-                                        <img class="lazy" src="images/author/author-11.jpg" alt=""></img>
+                                        <img class="lazy" src={author11} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -186,7 +215,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/static-3.jpg" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={static3} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -208,11 +237,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Fred Ryan">                                    
-                                        <img class="lazy" src="images/author/author-12.jpg" alt=""></img>
+                                        <img class="lazy" src={author12} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -230,7 +259,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/static-4.jpg" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={static4} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -252,11 +281,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Franklin Greer">                                    
-                                        <img class="lazy" src="images/author/author-9.jpg" alt=""></img>
+                                        <img class="lazy" src={author9} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -274,7 +303,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/anim-4.webp" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={anim4} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -296,12 +325,12 @@ const Content = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
-                                <div class="de_countdown bg-color-secondary text-white" data-year="2022" data-month="6" data-day="6" data-hour="8"></div>
+                                <div class="de_countdown" data-year="2022" data-month="6" data-day="6" data-hour="8"></div>
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Mamie Barnett">                                    
-                                        <img class="lazy" src="images/author/author-2.jpg" alt=""></img>
+                                        <img class="lazy" src={author4} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -319,7 +348,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/anim-2.webp" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={anim2} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -341,11 +370,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Nicholas Daniels">                                    
-                                        <img class="lazy" src="images/author/author-3.jpg" alt=""></img>
+                                        <img class="lazy" src={author3} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -363,7 +392,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/anim-1.webp" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={anim3} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -385,12 +414,12 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
-                                <div class="de_countdown bg-color-secondary text-white" data-year="2022" data-month="6" data-day="8" data-hour="8"></div>
+                                <div class="de_countdown" data-year="2022" data-month="6" data-day="8" data-hour="8"></div>
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Lori Hart">                                    
-                                        <img class="lazy" src="images/author/author-4.jpg" alt=""></img>
+                                        <img class="lazy" src={author4} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -408,7 +437,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/anim-5.webp" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={anim5} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -430,12 +459,12 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
-                                <div class="de_countdown bg-color-secondary text-white" data-year="2022" data-month="6" data-day="16" data-hour="8"></div>
+                                <div class="de_countdown" data-year="2022" data-month="6" data-day="16" data-hour="8"></div>
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Jimmy Wright">                                    
-                                        <img class="lazy" src="images/author/author-5.jpg" alt=""></img>
+                                        <img class="lazy" src={author5} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -453,7 +482,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/anim-3.webp" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={anim3}class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -475,11 +504,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Gayle Hicks">                                    
-                                        <img class="lazy" src="images/author/author-7.jpg" alt=""></img>
+                                        <img class="lazy" src={author7} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -497,7 +526,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/static-5.jpg" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={static5} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -519,12 +548,12 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
-                                <div class="de_countdown bg-color-secondary text-white" data-year="2022" data-month="6" data-day="16" data-hour="8"></div>
+                                <div class="de_countdown" data-year="2022" data-month="6" data-day="16" data-hour="8"></div>
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Karla Sharp">                                    
-                                        <img class="lazy" src="images/author/author-6.jpg" alt=""></img>
+                                        <img class="lazy" src={author6} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -542,7 +571,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/anim-6.webp" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={anim6} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -564,11 +593,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Claude Banks">                                    
-                                        <img class="lazy" src="images/author/author-8.jpg" alt=""></img>
+                                        <img class="lazy" src={author8} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -586,7 +615,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/anim-7.webp" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={anim7} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -608,11 +637,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Franklin Greer">                                    
-                                        <img class="lazy" src="images/author/author-9.jpg" alt=""></img>
+                                        <img class="lazy" src={author9} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -630,7 +659,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/static-6.jpg" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={static6} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -652,11 +681,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Fred Ryan">                                    
-                                        <img class="lazy" src="images/author/author-12.jpg" alt=""></img>
+                                        <img class="lazy" src={author12} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -674,7 +703,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/anim-8.webp" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={anim8} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -696,11 +725,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Lori Hart">                                    
-                                        <img class="lazy" src="images/author/author-4.jpg" alt=""></img>
+                                        <img class="lazy" src={author4} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -718,7 +747,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/static-7.jpg" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={static7} class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -740,11 +769,11 @@ const Content = () =>{
                                 </div> 
                             </div>
                         </div>
-                        <div class="d-item col-sm-6 col-md-4 col-lg-1-5">
+                        <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                             <div class="nft__item">
                                 <div class="author_list_pp">
                                     <a href="author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Monica Lucas">                                    
-                                        <img class="lazy" src="images/author/author-1.jpg" alt=""></img>
+                                        <img class="lazy" src={author1} alt=""></img>
                                         <i class="fa fa-check"></i>
                                     </a>
                                 </div>
@@ -762,7 +791,7 @@ const Content = () =>{
                                     </div>
                                     <a href="item-details.html">
                                         <div class="d-placeholder"></div>
-                                        <img src="images/items/static-8.jpg" class="lazy nft__item_preview" alt=""></img>
+                                        <img src={static8}class="nft__item_preview" alt=""></img>
                                     </a>
                                 </div>
                                 <div class="nft__item_info">
@@ -791,9 +820,11 @@ const Content = () =>{
                     </div>
                 </div>
             </section>
-
+            
+            </div> 
         </div>
-    </div>
+        
+        
     )
 }
 
