@@ -1,30 +1,18 @@
-import * as React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './pages/Home/Home'
-import Explore from './pages/Explore/Explore';
-import Itemdetails from './pages/Itemdetails/Itemdetails';
-// import App from './App';
-import {
-  Routes,
-  Route,
-  BrowserRouter
-} from "react-router-dom";
-import reportWebVitals from './reportWebVitals';
+import "./assets/animated.css";
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import '../node_modules/elegant-icons/style.css';
+import '../node_modules/et-line/style.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.js';
+import './assets/style.scss';
+import App from './components/app';
+import * as serviceWorker from './serviceWorker';
 
-const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" exact element={<Home/>}/>
-      <Route path="/explore" element={<Explore/>}/>
-      <Route path="/itemdetails" element={<Itemdetails/>}/>
-    </Routes>
-  </BrowserRouter>,
-
-  rootElement
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+	<App />, document.getElementById('root'));
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
