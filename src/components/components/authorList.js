@@ -5,13 +5,13 @@ const authorlist= () => (
     <ol className="author_list">
       <li>                                    
           <div className="author_list_pp">
-              <span onClick={()=> window.open("", "_self")}>
+              <span onClick={()=> window.open("/Author", "_self")}>
                   <img className="lazy" src="./img/author/author-1.jpg" alt=""/>
                   <i className="fa fa-check"></i>
               </span>
           </div>                                    
           <div className="author_list_info">
-              <span onClick={()=> window.open("", "_self")}>Monica Lucas</span>
+              <span onClick={()=> window.open("/Author", "_self")}>Monica Lucas</span>
               <span className="bot">3.2 ETH</span>
           </div>
       </li>

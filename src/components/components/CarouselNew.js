@@ -103,7 +103,7 @@ export default class Responsive extends Component {
                   <Clock deadline={this.state.deadline} />
                   </div>
                   <div className="author_list_pp">
-                      <span onClick={()=> window.open("/home1", "_self")}>                                    
+                      <span onClick={()=> window.open("/Author", "_self")}>                                    
                           <img className="lazy" src="./img/author/author-1.jpg" alt=""/>
                           <i className="fa fa-check"></i>
                       </span>
@@ -116,7 +116,7 @@ export default class Responsive extends Component {
                     </Outer>
                   </div>
                   <div className="nft__item_info">
-                      <span onClick={()=> window.open("/#", "_self")}>
+                      <span onClick={()=> window.open("/ItemDetail", "_self")}>
                           <h4>Pinky Ocean</h4>
                       </span>
                       <div className="nft__item_price">

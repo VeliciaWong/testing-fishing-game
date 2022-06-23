@@ -78,7 +78,7 @@ const wallet = () => (
       </section>
     </DAppProvider>
 
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 export default wallet;

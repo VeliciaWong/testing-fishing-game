@@ -118,7 +118,7 @@ const explore= () => (
       </section>
 
 
-  <Footer />
+  {/* <Footer /> */}
 </div>
 
 );

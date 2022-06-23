@@ -222,7 +222,7 @@ return (
     </div>
   </section>
 
-  <Footer />
+  {/* <Footer /> */}
 </div>
 );
 }
