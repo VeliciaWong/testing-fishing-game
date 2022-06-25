@@ -1,17 +1,9 @@
 import React from 'react';
-import {
-  useEthers,
-  useEtherBalance,
-  Rinkeby,
-  Kovan,
-  Mainnet,
-} from "@usedapp/core";
+import { useEthers } from "@usedapp/core";
 
 
 const Wallet = () => {
-
-    const { activateBrowserWallet, account, deactivate } = useEthers();
-
+    const { activateBrowserWallet } = useEthers();
     return (
       <div className="row">
         {/* <h1>This is testing purpose only!</h1>

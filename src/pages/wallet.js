@@ -1,7 +1,5 @@
 import React from 'react';
 import Wallet from '../components/wallet';
-import { DAppProvider, Rinkeby, Kovan, Mainnet } from "@usedapp/core";
-import { getDefaultProvider } from "ethers";
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
 
@@ -39,20 +37,6 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const config = {
-  networks: [Rinkeby],
-  readOnlyChainId: Rinkeby.chainId,
-  readOnlyUrls: {
-    [Mainnet.chainId]: getDefaultProvider("mainnet"),
-    [Rinkeby.chainId]: `https://rinkeby.infura.io/v3/${process.env.REACT_APP_INFURA_KEY}`,
-    [Kovan.chainId]: `https://kovan.infura.io/v3/${process.env.REACT_APP_INFURA_KEY}`,
-  },
-  notifications: {
-    expirationPeriod: 1000, //milliseconds
-    checkInterval: 1000, // milliseconds
-  },
-};
-
 const wallet = () => (
   <div>
     <GlobalStyles />
@@ -72,11 +56,9 @@ const wallet = () => (
       </div>
     </section>
 
-    <DAppProvider config={config}>
       <section className="container">
         <Wallet />
       </section>
-    </DAppProvider>
 
     {/* <Footer /> */}
   </div>
