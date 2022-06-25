@@ -3,6 +3,7 @@ import Breakpoint, { BreakpointProvider, setDefaultBreakpoints } from "react-soc
 import { header } from 'react-bootstrap';
 import { Link } from '@reach/router';
 import useOnclickOutside from "react-cool-onclickoutside";
+import { useEthers } from "@usedapp/core";
 
 
 setDefaultBreakpoints([
@@ -27,33 +28,34 @@ const NavLink = props => (
 
 
 const Header= function() {
+    const { active } = useEthers()
 
     const [openMenu, setOpenMenu] = React.useState(false);
     const [openMenu1, setOpenMenu1] = React.useState(false);
     const [openMenu2, setOpenMenu2] = React.useState(false);
     const [openMenu3, setOpenMenu3] = React.useState(false);
-    const handleBtnClick = (): void => {
+    const handleBtnClick = () => {
       setOpenMenu(!openMenu);
     };
-    const handleBtnClick1 = (): void => {
+    const handleBtnClick1 = () => {
       setOpenMenu1(!openMenu1);
     };
-    const handleBtnClick2 = (): void => {
+    const handleBtnClick2 = () => {
       setOpenMenu2(!openMenu2);
     };
-    const handleBtnClick3 = (): void => {
+    const handleBtnClick3 = () => {
       setOpenMenu3(!openMenu3);
     };
-    const closeMenu = (): void => {
+    const closeMenu = () => {
       setOpenMenu(false);
     };
-    const closeMenu1 = (): void => {
+    const closeMenu1 = () => {
       setOpenMenu1(false);
     };
-    const closeMenu2 = (): void => {
+    const closeMenu2 = () => {
       setOpenMenu2(false);
     };
-    const closeMenu3 = (): void => {
+    const closeMenu3 = () => {
       setOpenMenu3(false);
     };
     const ref = useOnclickOutside(() => {
@@ -188,59 +190,16 @@ const Header= function() {
                 <Breakpoint xl>
                   <div className='menu'>
                     <div className='navbar-item'>
-                        <div ref={ref}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick} onMouseLeave={closeMenu}>
-                            Home
-                            <span className='lines'></span>
-                            {openMenu && (
-                            <div className='item-dropdown'>
-                              <div className="dropdown" onClick={closeMenu}>
-                              
-                                <NavLink to="/">Homepage</NavLink>
-                                
-                              </div>
-                            </div>
-                          )}
-                          </div>
-                          
-                        </div>
+                      <NavLink to="/">
+                      Homepage
+                      <span className='lines'></span>
+                      </NavLink>
                     </div>
                     <div className='navbar-item'>
-                      <div ref={ref1}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick1} onMouseLeave={closeMenu1}>
-                            Explore
-                            <span className='lines'></span>
-                            {openMenu1 && (
-                            <div className='item-dropdown'>
-                              <div className="dropdown" onClick={closeMenu1}>
-                              <NavLink to="/Explore">Explore</NavLink>
-                              <NavLink to="/ItemDetail">Items Details</NavLink>
-                              
-                              </div>
-                            </div>
-                          )}
-                          </div>
-                          
-                        </div>
-                    </div>
-                    <div className='navbar-item'>
-                      <div ref={ref2}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick2} onMouseLeave={closeMenu2}>
-                            Pages
-                            <span className='lines'></span>
-                            {openMenu2 && (
-                            <div className='item-dropdown'>
-                              <div className="dropdown" onClick={closeMenu2}>
-                              <NavLink to="/Author">Author</NavLink>
-                              <NavLink to="/Wallet">Wallet</NavLink>
-                              </div>
-                            </div>
-                          )}
-                          </div>
-                        </div>
+                      <NavLink to="/Explore">
+                      Explore
+                      <span className='lines'></span>
+                      </NavLink>
                     </div>
                     <div className='navbar-item'>
                       <NavLink to="/Activity">
@@ -248,6 +207,14 @@ const Header= function() {
                       <span className='lines'></span>
                       </NavLink>
                     </div>
+                    {active && (
+                      <div className='navbar-item'>
+                        <NavLink to="/Author">
+                        Author
+                        <span className='lines'></span>
+                        </NavLink>
+                      </div>
+                    )}
                   </div>
                 </Breakpoint>
               </BreakpointProvider>
