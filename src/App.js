@@ -10,8 +10,7 @@ import Wallet from './pages/wallet';
 import Activity from './pages/activity';
 
 import { createGlobalStyle } from 'styled-components';
-import { Astar, DAppProvider, Rinkeby } from '@usedapp/core';
-import { getDefaultProvider } from 'ethers';
+import { Astar, DAppProvider } from '@usedapp/core';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -41,6 +40,7 @@ const PosedRouter = ({ children }) => (
 
 const config = {
   networks: [Astar],
+  readOnlyChain: Astar.Mainnet,
   readOnlyUrls: {
     [Astar.chainId]: 'https://astar.blastapi.io/d4c29a53-4abb-47bc-aba6-4406df1a574b',
   },

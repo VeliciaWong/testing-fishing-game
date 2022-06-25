@@ -60,7 +60,7 @@ const wallet = () => (
         <Wallet />
       </section>
 
-    {/* <Footer /> */}
+    <Footer />
   </div>
 );
 export default wallet;

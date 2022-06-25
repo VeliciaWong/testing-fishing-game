@@ -5,6 +5,7 @@ import CarouselCollection from '../components/CarouselCollection';
 import CarouselNew from '../components/CarouselNew';
 import AuthorList from '../components/authorList';
 import Catgor from '../components/Catgor';
+import Footer from '../components/footer';
 
 
 const home= () => (
@@ -71,7 +72,7 @@ const home= () => (
         <Catgor/>
       </section>
 
-    {/* <Footer /> */}
+    <Footer />
 
   </div>
 );

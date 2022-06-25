@@ -124,7 +124,7 @@ return (
       </section>
 
 
-  {/* <Footer /> */}
+  <Footer />
 </div>
 );
 }
