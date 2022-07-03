@@ -2721,6 +2721,7 @@ i.font60 {
 }
 
 .nft__item {
+    height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -2857,6 +2858,7 @@ i.font60 {
 }
 .nft__item_wrap {
     width: 100%;
+    height: 305px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -2868,9 +2870,9 @@ i.font60 {
     display: block;
     width: 100%;
 }
-.nft__item img {
+.nft__item .nft__item_preview {
     width: 100%;
-    height: auto !important;
+    object-fit: contain;
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
