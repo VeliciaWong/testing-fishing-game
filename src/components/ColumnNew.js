@@ -23,7 +23,7 @@ const NftCard = ({ nft }) => {
     return (
       <div className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
       {/* TODO: need dynamic link */}
-        <Link to="/ItemDetail">
+        <Link to={`/token/${nft.id}`}>
           <div className="nft__item m-0">
             <div className="author_list_pp">
               <span>

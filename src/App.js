@@ -11,7 +11,7 @@ import Activity from "./pages/activity";
 
 import { createGlobalStyle } from "styled-components";
 import { Astar, DAppProvider } from "@usedapp/core";
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import { ApolloClient, ApolloProvider, InMemoryCache, gql} from "@apollo/client";
 import { QueryClient, QueryClientProvider } from "react-query";
 
 const GlobalStyles = createGlobalStyle`
@@ -53,6 +53,15 @@ const apolloClient = new ApolloClient({
 
 const queryClient = new QueryClient()
 
+const fetcher = gql`
+  query($id: ID!){
+  tokenById(id: $id) {
+    id
+    tokenId
+    uri
+  }
+}
+`
 const app = () => (
   <div className="wraper">
     <GlobalStyles />
@@ -66,7 +75,7 @@ const app = () => (
                 <Redirect to="/Home" />
               </Home>
               <Explore path="/Explore" />
-              <ItemDetail path="/ItemDetail" />
+              <ItemDetail path="/token/:tokenId" />
               <Author path="/Author" />
               <Wallet path="/Wallet" />
               <Activity path="/Activity" />
