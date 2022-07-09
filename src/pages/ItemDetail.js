@@ -2,10 +2,8 @@ import React from "react";
 import Clock from "../components/Clock";
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
-import { gql } from "@apollo/client";
+import { gql, useQuery as useGraphql} from "@apollo/client";
 import { useQuery } from "react-query";
-import ContentLoader from "react-content-loader";
-
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.white {
@@ -31,22 +29,51 @@ const fetcher = gql`
     id
     tokenId
     uri
+    owner {
+      id
+    }
   }
 }
 `
 
+// const fetcher = gql`
+//   query($id: ID!){
+//   tokenById(id: $id) {
+//     id
+//     tokenId
+//     uri
+//     owner {
+//       id
+//       ownedTokens {
+//         owner {
+//           id
+//         }
+//       }
+//     }
+//   }
+// }
+// `
 
-const Colection = ({nft}) => {
+
+const Colection = function(props){
     const handleBtnClick = () => {
         console.log('buy nft')
     };
 
-    const { data: metadata, isSuccess } = useQuery(['metadata-nft', nft.id], async () => {
-        const resp = await fetch(nft.uri?.replace('ipfs://', 'https://ipfs.io/ipfs/'))
+    const { data: token} = useGraphql(fetcher, {
+      variables: {
+        id: props.tokenId,
+      }
+    })
+    console.log(token)
+    // console.log(token?.tokenById)
+
+    const { data: metadata} = useQuery(['metadata-nft', token?.tokenById?.id||''], async () => {
+        const resp = await fetch(token?.tokenById?.uri?.replace('ipfs://', 'https://ipfs.io/ipfs/'))
         return await resp.json()
       })
       
-    if (isSuccess){
+    console.log(metadata)
         return (
                 <div>
                     <GlobalStyles />
@@ -69,7 +96,7 @@ const Colection = ({nft}) => {
                                         <div className="item_info_views"><i className="fa fa-eye"></i>250</div>
                                         <div className="item_info_like"><i className="fa fa-heart"></i>18</div>
                                     </div>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <p>{metadata?.description}</p>
 
                                     <h6>Creator</h6>
                                     <div className="item_author">
@@ -80,7 +107,7 @@ const Colection = ({nft}) => {
                                             </span>
                                         </div>
                                         <div className="author_list_info">
-                                            <span>Monica Lucas</span>
+                                            <span>{token?.tokenById?.owner?.id}</span>
                                         </div>
                                     </div>
 
@@ -95,28 +122,8 @@ const Colection = ({nft}) => {
                     </section>
                     <Footer />
                 </div>
+
             );
-    } else{
-        return (
-            <div className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-              <div className="nft__item m-0">
-                <ContentLoader
-                  speed={2}
-                  width="100%"
-                  height={400}
-                  viewBox="0 0 400 600"
-                  backgroundColor="#f3f3f3"
-                  foregroundColor="#ecebeb"
-                >
-                  <circle cx="55" cy="40" r="38" /> 
-                  <rect x="0" y="65" rx="2" ry="2" width="400" height="400" /> 
-                  <rect x="0" y="525" rx="0" ry="0" width="255" height="20" /> 
-                  <rect x="0" y="565" rx="0" ry="0" width="84" height="20" />
-                </ContentLoader>
-              </div>
-            </div>
-          )
-    }
-   
+
 }
 export default Colection;
