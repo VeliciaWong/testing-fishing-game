@@ -1,12 +1,13 @@
 import moment from "moment";
+import { nullAddress } from "./consts/web3";
 
 export function debounce(func, wait, immediate) {
   var timeout;
-  return function() {
+  return function () {
     var context = this,
       args = arguments;
     clearTimeout(timeout);
-    timeout = setTimeout(function() {
+    timeout = setTimeout(function () {
       timeout = null;
       if (!immediate) func.apply(context, args);
     }, wait);
@@ -72,7 +73,7 @@ export function scrollTo(scrollableElement, elmID) {
   if (stopY > startY) {
     for (var i = startY; i < stopY; i += step) {
       setTimeout(
-        (function(leapY) {
+        (function (leapY) {
           return () => {
             scrollableElement.scrollTo(0, leapY);
           };
@@ -87,7 +88,7 @@ export function scrollTo(scrollableElement, elmID) {
   }
   for (let i = startY; i > stopY; i -= step) {
     setTimeout(
-      (function(leapY) {
+      (function (leapY) {
         return () => {
           scrollableElement.scrollTo(0, leapY);
         };
@@ -129,7 +130,7 @@ export function getQueryParam(prop) {
     window.location.href.slice(window.location.href.indexOf("?") + 1)
   );
   var definitions = search.split("&");
-  definitions.forEach(function(val, key) {
+  definitions.forEach(function (val, key) {
     var parts = val.split("=", 2);
     params[parts[0]] = parts[1];
   });
@@ -141,4 +142,8 @@ export function classList(classes) {
     .filter(entry => entry[1])
     .map(entry => entry[0])
     .join(" ");
+}
+
+export function isAddressNull(address) {
+  return !address || address === nullAddress
 }

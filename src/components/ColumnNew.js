@@ -22,12 +22,12 @@ const NftCard = ({ nft }) => {
   if (isSuccess) {
     return (
       <div className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-      {/* TODO: need dynamic link */}
+        {/* TODO: need dynamic link */}
         <Link to={`/token/${nft.id}`}>
           <div className="nft__item m-0">
             <div className="author_list_pp">
               <span>
-              {/* TODO: img dummy */}
+                {/* TODO: img dummy */}
                 <img className="lazy" src="./img/author/author-10.jpg" alt="" />
                 <i className="fa fa-check"></i>
               </span>
@@ -50,7 +50,7 @@ const NftCard = ({ nft }) => {
                 <h4>{metadata?.name}</h4>
               </span>
               <div className="nft__item_price">
-              {/* TODO: data dummy */}
+                {/* TODO: data dummy */}
                 0.08 ASTR
               </div>
               <div className="nft__item_like">
@@ -75,9 +75,9 @@ const NftCard = ({ nft }) => {
             backgroundColor="#f3f3f3"
             foregroundColor="#ecebeb"
           >
-            <circle cx="55" cy="40" r="38" /> 
-            <rect x="0" y="65" rx="2" ry="2" width="400" height="400" /> 
-            <rect x="0" y="525" rx="0" ry="0" width="255" height="20" /> 
+            <circle cx="55" cy="40" r="38" />
+            <rect x="0" y="65" rx="2" ry="2" width="400" height="400" />
+            <rect x="0" y="525" rx="0" ry="0" width="255" height="20" />
             <rect x="0" y="565" rx="0" ry="0" width="84" height="20" />
           </ContentLoader>
         </div>

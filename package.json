@@ -17,6 +17,7 @@
     "ethers": "^5.6.9",
     "font-awesome": "^4.7.0",
     "graphql": "^16.5.0",
+    "moment": "^2.29.4",
     "react": "^16.8.0",
     "react-awesome-reveal": "^3.8.1",
     "react-bootstrap": "^1.6.3",
