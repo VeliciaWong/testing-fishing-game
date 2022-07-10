@@ -10,9 +10,10 @@ import Wallet from "./pages/wallet";
 import Activity from "./pages/activity";
 
 import { createGlobalStyle } from "styled-components";
-import { Astar, DAppProvider } from "@usedapp/core";
-import { ApolloClient, ApolloProvider, InMemoryCache, gql} from "@apollo/client";
+import { DAppProvider } from "@usedapp/core";
+import { ApolloClient, ApolloProvider, InMemoryCache, gql } from "@apollo/client";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { Shibuya } from "./consts/chains";
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -38,11 +39,10 @@ const PosedRouter = ({ children }) => (
 );
 
 const dAppConfig = {
-  networks: [Astar],
-  readOnlyChain: Astar.Mainnet,
+  networks: [Shibuya],
+  readOnlyChain: Shibuya.chainId,
   readOnlyUrls: {
-    [Astar.chainId]:
-      "https://astar.blastapi.io/d4c29a53-4abb-47bc-aba6-4406df1a574b",
+    [Shibuya.chainId]: "https://evm.shibuya.astar.network",
   },
 };
 
@@ -53,15 +53,6 @@ const apolloClient = new ApolloClient({
 
 const queryClient = new QueryClient()
 
-const fetcher = gql`
-  query($id: ID!){
-  tokenById(id: $id) {
-    id
-    tokenId
-    uri
-  }
-}
-`
 const app = () => (
   <div className="wraper">
     <GlobalStyles />
@@ -75,7 +66,7 @@ const app = () => (
                 <Redirect to="/Home" />
               </Home>
               <Explore path="/Explore" />
-              <ItemDetail path="/token/:tokenId" />
+              <ItemDetail path="/token/:id" />
               <Author path="/Author" />
               <Wallet path="/Wallet" />
               <Activity path="/Activity" />
